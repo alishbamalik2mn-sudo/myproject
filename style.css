@@ -1,0 +1,551 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+}
+
+/* Header */
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: white;
+
+    padding: 20px 60px;
+}
+
+.logo h1 {
+
+    color: #1d237d;
+    font-size: 40px;
+}
+
+.logo p {
+
+    font-size: 14px;
+}
+
+nav ul {
+
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+
+    margin: 0 15px;
+}
+
+nav ul li a {
+
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+button {
+
+    background: red;
+    color: white;
+
+    padding: 12px 20px;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+/* Hero Section */
+
+.hero {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 60px;
+
+    background: #16206b;
+
+    color: white;
+}
+
+.hero-text {
+
+    width: 50%;
+}
+
+.hero-text h1 {
+
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero-text h3 {
+
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+
+.btn1 {
+
+    background: red;
+
+    color: white;
+
+    padding: 15px 30px;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    margin-right: 15px;
+}
+
+.btn2 {
+
+    border: 2px solid white;
+
+    color: white;
+
+    padding: 15px 30px;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+}
+
+.hero-image {
+
+    width: 45%;
+}
+
+.hero-image img {
+
+    width: 100%;
+
+    border-radius: 10px;
+}
+
+/* OUR SERVICES */
+
+.services {
+
+    width: 90%;
+    margin: 60px auto;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+}
+
+.services-left {
+
+    width: 30%;
+
+}
+
+.services-left h5 {
+
+    color: red;
+    font-size: 18px;
+
+}
+
+.services-left h1 {
+
+    color: #1b1b7a;
+    font-size: 45px;
+    margin: 10px 0;
+
+}
+
+.line {
+
+    width: 70px;
+    height: 4px;
+    background: red;
+    margin: 20px 0;
+
+}
+
+.services-left p {
+
+    line-height: 28px;
+    color: #555;
+    margin-bottom: 30px;
+
+}
+
+.service-btn {
+
+    background: red;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.services-right {
+
+    width: 70%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+}
+
+.service-box {
+
+    display: flex;
+    align-items: center;
+
+    background: white;
+
+    padding: 15px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+
+}
+
+.service-box img {
+
+    width: 55px;
+    height: 55px;
+
+    margin-right: 20px;
+
+}
+
+.service-box h3 {
+
+    font-size: 20px;
+    color: #1b1b7a;
+
+}
+
+/* ================= Statistics ================= */
+
+.stats {
+
+    background: #141a66;
+
+    display: flex;
+
+    justify-content: space-around;
+
+    align-items: center;
+
+    padding: 50px;
+
+    color: white;
+
+    text-align: center;
+
+}
+
+.stat-box {
+
+    width: 25%;
+
+    border-right: 1px solid rgba(255, 255, 255, .3);
+
+}
+
+.stat-box:last-child {
+
+    border-right: none;
+
+}
+
+.stat-box img {
+
+    width: 50px;
+
+    margin-bottom: 15px;
+
+}
+
+.stat-box h1 {
+
+    color: #ff2d2d;
+
+    font-size: 50px;
+
+}
+
+.stat-box h3 {
+
+    margin-top: 10px;
+
+    font-size: 18px;
+
+}
+
+.stat-box p {
+
+    margin-top: 10px;
+
+    font-size: 16px;
+
+}
+
+/* ================= Projects ================= */
+
+.projects {
+
+    width: 90%;
+    margin: 70px auto;
+
+    display: flex;
+    gap: 30px;
+
+}
+
+.project-left {
+
+    width: 28%;
+
+}
+
+.project-left h5 {
+
+    color: red;
+    font-size: 18px;
+
+}
+
+.project-left h1 {
+
+    color: #1b1b7a;
+    font-size: 40px;
+    margin: 10px 0;
+
+}
+
+.project-left p {
+
+    color: #555;
+    line-height: 28px;
+    margin: 25px 0;
+
+}
+
+.project-btn {
+
+    background: red;
+    color: white;
+
+    border: none;
+
+    padding: 15px 30px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+}
+
+.project-right {
+
+    width: 72%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+}
+
+.project-card {
+
+    background: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+
+}
+
+.project-card img {
+
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+
+}
+
+.project-card h3 {
+
+    background: #1b1b7a;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 18px;
+
+    font-size: 18px;
+
+}
+
+/* ================= CTA ================= */
+
+.cta {
+
+    background: #e30000;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 25px 80px;
+
+}
+
+.cta h2 {
+
+    font-size: 30px;
+
+}
+
+.cta p {
+
+    margin-top: 8px;
+
+}
+
+.cta button {
+
+    background: white;
+
+    color: #e30000;
+
+    border: none;
+
+    padding: 15px 35px;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+
+    background: #151c6d;
+
+    color: white;
+
+    padding: 60px 70px;
+
+}
+
+.footer-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 40px;
+
+}
+
+.footer-box h1 {
+
+    font-size: 45px;
+
+}
+
+.footer-box h3 {
+
+    margin-bottom: 20px;
+
+}
+
+.footer-box p {
+
+    line-height: 28px;
+
+    margin-bottom: 10px;
+
+}
+
+.footer-box ul {
+
+    list-style: none;
+
+}
+
+.footer-box ul li {
+
+    margin: 12px 0;
+
+}
+
+.footer-box ul li a {
+
+    color: white;
+
+    text-decoration: none;
+
+}
+
+.social a {
+
+    color: white;
+
+    text-decoration: none;
+
+    line-height: 28px;
+
+}
+
+
+/* ================= COPYRIGHT ================= */
+
+.copyright {
+
+    background: #d60000;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 15px;
+
+    font-size: 15px;
+
+}

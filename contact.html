@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | SOLLIX Electromechanical Services LLC</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #12134b;
+            background: white;
+        }
+
+
+        /* ================= HEADER ================= */
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 16px 32px;
+
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+            flex-wrap: wrap;
+            gap: 12px;
+
+            background: white;
+        }
+
+
+        /* LOGO */
+
+        .logo img {
+            height: 45px;
+            width: auto;
+        }
+
+
+        /* NAVIGATION */
+
+        nav a {
+            margin: 0 12px;
+
+            text-decoration: none;
+
+            color: #12134b;
+
+            font-weight: 600;
+
+            text-transform: uppercase;
+
+            font-size: 14px;
+
+            white-space: nowrap;
+
+            transition: 0.3s;
+        }
+
+
+        nav a:hover {
+            color: #e2231a;
+        }
+
+
+        /* GET A QUOTE */
+
+        .quote-btn {
+            background: #e2231a;
+
+            color: white;
+
+            padding: 12px 20px;
+
+            border-radius: 4px;
+
+            text-decoration: none;
+
+            font-weight: 600;
+
+            white-space: nowrap;
+        }
+
+        .quote-btn:hover {
+            background: #c91d16;
+            color: white;
+        }
+
+
+        /* ================= CONTACT HERO ================= */
+
+        .contact-hero {
+
+            background: #12134b;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 60px 32px;
+        }
+
+
+        .contact-hero h1 {
+
+            font-size: 30px;
+
+            margin-bottom: 10px;
+        }
+
+
+        .contact-hero p {
+
+            color: #ccc;
+
+            max-width: 650px;
+
+            margin: auto;
+
+            line-height: 1.6;
+        }
+
+
+        /* ================= CONTACT SECTION ================= */
+
+        .contact-section {
+
+            display: grid;
+
+            grid-template-columns: 1fr 1.3fr;
+
+            gap: 40px;
+
+            padding: 60px 32px;
+
+            max-width: 1200px;
+
+            margin: auto;
+        }
+
+
+        /* ================= CONTACT INFORMATION ================= */
+
+        .contact-info {
+
+            background: #f7f7fb;
+
+            padding: 35px;
+
+            border-radius: 8px;
+        }
+
+
+        .eyebrow {
+
+            color: #e2231a;
+
+            font-weight: bold;
+
+            margin-bottom: 8px;
+        }
+
+
+        .contact-info h2 {
+
+            color: #12134b;
+
+            font-size: 30px;
+
+            margin-bottom: 14px;
+        }
+
+
+        .contact-info>p {
+
+            color: #555;
+
+            line-height: 1.6;
+
+            margin-bottom: 30px;
+        }
+
+
+        /* INFO ITEM */
+
+        .contact-item {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 15px;
+
+            margin-bottom: 22px;
+        }
+
+
+        /* ICON */
+
+        .contact-icon {
+
+            width: 45px;
+
+            height: 45px;
+
+            min-width: 45px;
+
+            background: #e2231a;
+
+            color: white;
+
+            border-radius: 6px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 18px;
+        }
+
+
+        .contact-item h4 {
+
+            color: #12134b;
+
+            margin-bottom: 5px;
+        }
+
+
+        .contact-item p {
+
+            color: #666;
+
+            font-size: 14px;
+
+            line-height: 1.4;
+        }
+
+
+        /* ================= CONTACT FORM ================= */
+
+        .contact-form {
+
+            padding: 35px;
+
+            background: white;
+
+            border: 1px solid #eee;
+
+            border-radius: 8px;
+
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+        }
+
+
+        .contact-form h2 {
+
+            color: #12134b;
+
+            margin-bottom: 25px;
+
+            font-size: 30px;
+        }
+
+
+        .form-row {
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 18px;
+        }
+
+
+        .form-group {
+
+            margin-bottom: 18px;
+        }
+
+
+        .form-group label {
+
+            display: block;
+
+            color: #12134b;
+
+            font-weight: 600;
+
+            font-size: 14px;
+
+            margin-bottom: 7px;
+        }
+
+
+        .form-group input,
+        .form-group textarea {
+
+            width: 100%;
+
+            padding: 13px 14px;
+
+            border: 1px solid #ddd;
+
+            border-radius: 4px;
+
+            outline: none;
+
+            font-size: 14px;
+
+            font-family: Arial, sans-serif;
+        }
+
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+
+            border-color: #12134b;
+        }
+
+
+        .form-group textarea {
+
+            height: 130px;
+
+            resize: none;
+        }
+
+
+        /* SEND BUTTON */
+
+        .send-btn {
+
+            display: inline-block;
+
+            background: #e2231a;
+
+            color: white;
+
+            border: none;
+
+            padding: 12px 28px;
+
+            border-radius: 4px;
+
+            font-weight: 600;
+
+            font-size: 15px;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+
+        .send-btn:hover {
+
+            background: #c91d16;
+
+            transform: translateY(-2px);
+        }
+
+
+        /* ================= CTA ================= */
+
+        .cta {
+
+            background: #e2231a;
+
+            color: white;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            padding: 30px 32px;
+        }
+
+
+        .cta p {
+
+            margin-top: 4px;
+        }
+
+
+        .btn-white {
+
+            background: white;
+
+            color: #e2231a;
+
+            padding: 12px 24px;
+
+            border-radius: 4px;
+
+            text-decoration: none;
+
+            font-weight: 600;
+        }
+
+
+        /* ================= FOOTER ================= */
+
+        footer {
+
+            background: #12134b;
+
+            color: #ccc;
+        }
+
+
+        .footer-top {
+
+            display: grid;
+
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+
+            gap: 30px;
+
+            padding: 50px 32px;
+        }
+
+
+        .footer-top h4 {
+
+            color: white;
+
+            margin-bottom: 16px;
+        }
+
+
+        .footer-top a,
+        .footer-top p {
+
+            display: block;
+
+            color: #ccc;
+
+            text-decoration: none;
+
+            margin-bottom: 10px;
+
+            font-size: 14px;
+        }
+
+
+        .footer-top a:hover {
+
+            color: white;
+        }
+
+
+        .footer-top i {
+
+            color: #e2231a;
+
+            margin-right: 8px;
+        }
+
+
+        /* SOCIAL ICONS */
+
+        .social-icons {
+
+            display: flex;
+
+            gap: 12px;
+
+            margin-top: 16px;
+        }
+
+
+        .social-icons a {
+
+            width: 34px;
+
+            height: 34px;
+
+            border: 1px solid rgba(255, 255, 255, 0.3);
+
+            border-radius: 50%;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            color: white;
+        }
+
+
+        .social-icons a:hover {
+
+            background: #e2231a;
+
+            border-color: #e2231a;
+        }
+
+
+        /* FOOTER BOTTOM */
+
+        .footer-bottom {
+
+            text-align: center;
+
+            background: #e2231a;
+
+            color: white;
+
+            padding: 14px;
+
+            font-size: 13px;
+        }
+
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 800px) {
+
+            header {
+
+                flex-direction: column;
+
+                gap: 12px;
+
+            }
+
+
+            nav {
+
+                display: flex;
+
+                flex-wrap: wrap;
+
+                justify-content: center;
+            }
+
+
+            .contact-section {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .form-row {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .cta {
+
+                flex-direction: column;
+
+                text-align: center;
+
+                gap: 16px;
+            }
+
+
+            .footer-top {
+
+                grid-template-columns: 1fr 1fr;
+            }
+
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <!-- LOGO -->
+
+        <div class="logo">
+
+            <img src="images/logo.png" alt="SOLLIX Logo">
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About Us</a>
+
+            <a href="services.html">Services</a>
+
+            <a href="projects.html">Projects</a>
+
+            <a href="values.html">Values</a>
+
+            <a href="contact.html">Contact Us</a>
+
+        </nav>
+
+
+        <!-- GET A QUOTE -->
+
+        <a href="contact.html" class="quote-btn">
+
+            <i class="fa-solid fa-phone"></i>
+
+            Get a Quote
+
+        </a>
+
+    </header>
+
+
+
+    <!-- ================= CONTACT HERO ================= -->
+
+    <section class="contact-hero">
+
+        <h1>Contact Us</h1>
+
+        <p>
+            Get in touch with SOLLIX Electromechanical Services LLC.
+            We are here to provide reliable firefighting installation
+            and maintenance solutions across Dubai & UAE.
+        </p>
+
+    </section>
+
+
+
+    <!-- ================= CONTACT CONTENT ================= -->
+
+    <section class="contact-section">
+
+
+        <!-- LEFT SIDE -->
+
+        <div class="contact-info">
+
+            <p class="eyebrow">
+                Get In Touch
+            </p>
+
+            <h2>
+                We Are Here To Help
+            </h2>
+
+            <p>
+                Have a question or need a reliable fire protection
+                solution? Contact our team and we will be happy
+                to assist you.
+            </p>
+
+
+
+            <div class="contact-item">
+                <div class="contact-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+
+                <div>
+                    <h4>Our Commitment</h4>
+                    <p>Quality, safety, and reliability.</p>
+                </div>
+
+            </div>
+
+
+            <!-- PHONE -->
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                </div>
+
+                <div>
+
+                    <h4>
+                        Phone
+                    </h4>
+
+                    <p>
+                        +971 50 123 4567
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- EMAIL -->
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </div>
+
+                <div>
+
+                    <h4>
+                        Email
+                    </h4>
+
+                    <p>
+                        info@sollix.ae
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- LOCATION -->
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                </div>
+
+                <div>
+
+                    <h4>
+                        Location
+                    </h4>
+
+                    <p>
+                        Dubai, United Arab Emirates
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- WORKING HOURS -->
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+
+                    <i class="fa-solid fa-clock"></i>
+
+                </div>
+
+                <div>
+
+                    <h4>
+                        Working Hours
+                    </h4>
+
+                    <p>
+                        Monday - Friday<br>
+                        9:00 AM - 6:00 PM
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- RIGHT SIDE FORM -->
+
+        <div class="contact-form">
+
+            <h2>
+                Send Us a Message
+            </h2>
+
+
+            <form>
+
+
+                <!-- NAME + EMAIL -->
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Your Name
+                        </label>
+
+                        <input type="text" id="name" placeholder="Enter your name" required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input type="email" id="email" placeholder="Enter your email" required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PHONE + SUBJECT -->
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <input type="tel" id="phone" placeholder="Enter your phone number">
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="subject">
+                            Subject
+                        </label>
+
+                        <input type="text" id="subject" placeholder="Enter subject" required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MESSAGE -->
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Your Message
+                    </label>
+
+                    <textarea id="message" placeholder="Write your message here..." required></textarea>
+
+                </div>
+
+
+                <!-- SEND -->
+
+                <button type="submit" class="send-btn">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                    Send Message
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="cta">
+
+        <div>
+
+            <h3>
+                Need a Fire Protection Solution?
+            </h3>
+
+            <p>
+                Let's build a safer tomorrow together.
+            </p>
+
+        </div>
+
+
+        <a href="contact.html" class="btn-white">
+
+            Get in Touch
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-top">
+
+
+            <!-- COMPANY -->
+
+            <div>
+
+                <h4>
+                    SOLLIX
+                </h4>
+
+                <p>
+                    Providing reliable firefighting installation
+                    and maintenance services across Dubai & UAE.
+                </p>
+
+
+                <div class="social-icons">
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+
+            <div>
+
+                <h4>
+                    Quick Links
+                </h4>
+
+                <a href="index.html">Home</a>
+
+                <a href="about.html">About Us</a>
+
+                <a href="services.html">Services</a>
+
+                <a href="projects.html">Projects</a>
+
+                <a href="values.html">Values</a>
+
+                <a href="contact.html">Contact Us</a>
+
+            </div>
+
+
+            <!-- SERVICES -->
+
+            <div>
+
+                <h4>
+                    Our Services
+                </h4>
+
+                <a href="services.html">
+                    Fire Pump Systems
+                </a>
+
+                <a href="services.html">
+                    Sprinkler Systems
+                </a>
+
+                <a href="services.html">
+                    Fire Hose Reel Systems
+                </a>
+
+                <a href="services.html">
+                    Maintenance Services
+                </a>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div>
+
+                <h4>
+                    Contact Us
+                </h4>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +971 50 123 4567
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    info@sollix.ae
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Dubai, United Arab Emirates
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- FOOTER BOTTOM -->
+
+        <div class="footer-bottom">
+
+            &copy; 2024 SOLLIX Electromechanical Services LLC.
+            All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

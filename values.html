@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <title>Our Values </title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f7f9fc;
+            color: #12134b;
+        }
+
+        /* HEADER */
+
+        header {
+            background: white;
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .logo img {
+            height: 45px;
+            width: auto;
+        }
+
+        nav a {
+            margin: 0 12px;
+            text-decoration: none;
+            color: #12134b;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 14px;
+            transition: 0.3s;
+            white-space: nowrap;
+        }
+
+        nav a:hover {
+            color: #e2231a;
+        }
+
+        .quote-btn {
+            background: #e2231a;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* HERO */
+
+        .values-hero {
+            text-align: center;
+            padding: 60px 32px;
+            background:
+                linear-gradient(125deg,
+                    #12134b,
+                    #24265f);
+
+            color: white;
+        }
+
+        .values-hero h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+
+        }
+
+
+
+        .values-hero p {
+            max-width: 650px;
+            margin: auto;
+            font-size: 15px;
+            line-height: 1.5;
+            color: #e5e5e5;
+        }
+
+
+        /* VALUES SECTION */
+
+        .values-section {
+            width: 88%;
+            max-width: 1200px;
+            margin: 70px auto;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-heading h2 {
+            font-size: 34px;
+            margin-bottom: 12px;
+        }
+
+        .section-heading .line {
+            width: 70px;
+            height: 4px;
+            background: #e2231a;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+
+        /* CARDS */
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 28px;
+        }
+
+        .value-card {
+            position: relative;
+            background: white;
+            padding: 40px 28px;
+            border-radius: 15px;
+            text-align: center;
+
+            box-shadow:
+                0 8px 25px rgba(18, 19, 75, 0.08);
+
+            transition: all 0.35s ease;
+            overflow: hidden;
+        }
+
+        .value-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: #e2231a;
+        }
+
+        .value-card:hover {
+            transform: translateY(-10px);
+
+            box-shadow:
+                0 15px 35px rgba(18, 19, 75, 0.15);
+        }
+
+
+        /* ICON */
+
+        .value-icon {
+            width: 75px;
+            height: 75px;
+
+            margin: 0 auto 22px;
+
+            border-radius: 50%;
+
+            background: #12134b;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 32px;
+
+            color: white;
+
+            transition: 0.3s;
+        }
+
+        .value-card:hover .value-icon {
+            background: #e2231a;
+            transform: rotateY(360deg);
+        }
+
+
+        /* CARD TEXT */
+
+        .value-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #12134b;
+        }
+
+        .value-card p {
+            color: #666;
+            line-height: 1.7;
+            font-size: 15px;
+        }
+
+
+        /* BOTTOM MESSAGE */
+
+        .values-message {
+            margin-top: 65px;
+
+            background: #12134b;
+
+            color: white;
+
+            padding: 45px 30px;
+
+            border-radius: 15px;
+
+            text-align: center;
+        }
+
+        .values-message h2 {
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+
+        .values-message p {
+            max-width: 750px;
+            margin: auto;
+            line-height: 1.7;
+            color: #ddd;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            background: #0d0e36;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 70px;
+        }
+
+
+        /* RESPONSIVE */
+
+        @media (max-width: 900px) {
+
+            header {
+                padding: 20px;
+                flex-direction: column;
+                gap: 18px;
+            }
+
+            .values-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .values-hero h1 {
+                font-size: 38px;
+            }
+
+            .values-section {
+                width: 90%;
+            }
+
+        }
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            <img src="images/logo.png" alt="SOLLIX Logo">
+        </div>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="./projects.html">Projects</a>
+            <a href="values.html"> Values</a>
+            <a href="contact.html">Contact Us</a>
+            </a>
+
+        </nav>
+        <a href="#" class="quote-btn">
+            <i class="fa-solid fa-phone"></i> Get a Quote
+        </a>
+    </header>
+
+
+
+    <!-- HERO -->
+
+    <section class="values-hero">
+
+        <h1>
+            Our <span>Values</span>
+        </h1>
+
+        <p>
+            At SOLLIX, our values define who we are and guide
+            every decision we make. We are committed to quality,
+            innovation, integrity and lasting relationships.
+        </p>
+
+    </section>
+
+
+
+    <!-- VALUES -->
+
+    <section class="values-section">
+
+
+        <div class="section-heading">
+
+            <h2>
+                What We Stand For
+            </h2>
+
+            <div class="line"></div>
+
+        </div>
+
+
+
+        <div class="values-grid">
+
+
+            <!-- QUALITY -->
+
+            <div class="value-card">
+
+                <div class="value-icon">
+                    ★
+                </div>
+
+                <h3>
+                    Quality
+                </h3>
+
+                <p>
+                    We are committed to delivering exceptional
+                    quality in every project and service we provide.
+                </p>
+
+            </div>
+
+
+
+            <!-- INNOVATION -->
+
+            <div class="value-card">
+
+                <div class="value-icon">
+                    ✦
+                </div>
+
+                <h3>
+                    Innovation
+                </h3>
+
+                <p>
+                    We embrace modern ideas and innovative
+                    solutions to create better results for our clients.
+                </p>
+
+            </div>
+
+
+
+            <!-- INTEGRITY -->
+
+            <div class="value-card">
+
+                <div class="value-icon">
+                    ♢
+                </div>
+
+                <h3>
+                    Integrity
+                </h3>
+
+                <p>
+                    Honesty, transparency and trust are at the
+                    heart of everything we do.
+                </p>
+
+            </div>
+
+
+
+            <!-- SAFETY -->
+
+            <div class="value-card">
+
+                <div class="value-icon">
+                    ✓
+                </div>
+
+                <h3>
+                    Safety
+                </h3>
+
+                <p>
+                    We prioritize safety and responsible practices
+                    throughout every stage of our projects.
+                </p>
+
+            </div>
+
+
+
+            <!-- TEAMWORK -->
+
+            <div class="value-card">
+
+                <div class="value-icon">
+                    ♧
+                </div>
+
+                <h3>
+                    Teamwork
+                </h3>
+
+                <p>
+                    We believe strong teamwork creates stronger
+                    solutions and successful project outcomes.
+                </p>
+
+            </div>
+
+
+
+            <!-- CUSTOMER -->
+
+            <div class="value-card">
+
+                <div class="value-icon">
+                    ♥
+                </div>
+
+                <h3>
+                    Customer Focus
+                </h3>
+
+                <p>
+                    We listen to our clients and work hard to
+                    deliver solutions that meet their expectations.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- BOTTOM -->
+
+        <div class="values-message">
+
+            <h2>
+                Built on Values. Driven by Excellence.
+            </h2>
+
+            <p>
+                Our commitment to these values helps us build
+                long-term partnerships and deliver reliable,
+                professional and innovative solutions.
+            </p>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 SOLLIX. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
